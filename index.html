@@ -2,268 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Praveen Thati | Engineering Leader</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #0a0f1f;
-      --panel: #0f172a;
-      --border: #1e293b;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56,189,248,0.15);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, #0b3a4a33, transparent),
-                  var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 96px 28px;
-    }
-
-    /* HERO */
-    .hero {
-      max-width: 820px;
-    }
-
-    h1 {
-      font-size: 56px;
-      line-height: 1.1;
-      margin: 0 0 12px;
-      letter-spacing: -0.02em;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      color: var(--accent);
-      margin-bottom: 28px;
-      font-weight: 500;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: var(--muted);
-    }
-
-    .actions {
-      margin-top: 36px;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 12px 20px;
-      border-radius: 12px;
-      font-weight: 600;
-      text-decoration: none;
-      border: 1px solid var(--border);
-      color: var(--text);
-      background: #020617;
-    }
-
-    .btn.primary {
-      background: var(--accent);
-      color: #020617;
-      border-color: transparent;
-    }
-
-    /* SECTIONS */
-    section {
-      margin-top: 96px;
-    }
-
-    section h2 {
-      font-size: 28px;
-      margin-bottom: 24px;
-      letter-spacing: -0.01em;
-    }
-
-    .card {
-      background: linear-gradient(180deg, #020617, #020617cc);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 32px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-    }
-
-    /* PROJECTS */
-    .project h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    .project p {
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .meta {
-      background: var(--accent-soft);
-      color: var(--accent);
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    /* SKILLS */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      border: 1px solid var(--border);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    footer {
-      margin-top: 120px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-      <h1>Praveen Thati</h1>
-      <div class="subtitle">
-        Engineering Leader · AI · Cloud Platforms · Privacy
-      </div>
+<div class="container">
 
-      <p>
-        Engineering leader with <strong>18+ years</strong> of experience building
-        large-scale cloud platforms, AI-driven systems, and privacy-first
-        architectures. Known for operating in ambiguity, scaling organizations,
-        and delivering customer-critical platforms with measurable impact.
-      </p>
-
-      <div class="actions">
-        <a class="btn primary" href="#">Download Resume</a>
-        <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a class="btn" href="https://github.com/thatipraveen" target="_blank">GitHub</a>
-      </div>
+  <nav>
+    <div class="nav-left">Praveen Thati</div>
+    <div class="nav-right">
+      <a class="active" href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.pdf">Resume</a>
     </div>
+  </nav>
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Selected Work</h2>
+  <h1>Engineering Leader<br/>AI · Cloud · Privacy</h1>
 
-      <div class="grid">
-        <div class="card project">
-          <div class="meta">Enterprise Platform · Millions of Users</div>
-          <h3>AWS Skill Builder — Admin & Learning Platform</h3>
-          <p>
-            Led the first-party enterprise administration platform enabling
-            organizations to manage training, licensing, and learner outcomes
-            at global scale.
-          </p>
-          <p>
-            Led a 30+ person org across engineering, product, and program
-            management. Designed extensible platform foundations for future
-            learning products.
-          </p>
-        </div>
+  <p>
+    Senior Engineering Leader with 18+ years of experience building
+    AI-driven, privacy-first platforms at global scale. Proven track record
+    leading multi-team organizations, owning mission-critical systems,
+    and delivering measurable business outcomes across millions of users.
+  </p>
 
-        <div class="card project">
-          <div class="meta">Privacy · 700M+ Devices</div>
-          <h3>Privacy Governance Platform</h3>
-          <p>
-            Enabled a new privacy governance and auditability service across
-            Amazon’s device ecosystem, improving regulatory compliance and
-            customer trust.
-          </p>
-          <p>
-            Designed privacy-first abstractions supporting evolving global
-            regulations and long-term platform reuse.
-          </p>
-        </div>
-
-        <div class="card project">
-          <div class="meta">Payments · 20+ Countries</div>
-          <h3>Global Purchase & Billing Experience</h3>
-          <p>
-            Re-architected complex checkout and billing flows for AWS Training
-            & Certification, balancing UX simplicity with security and
-            compliance.
-          </p>
-          <p>
-            Reduced checkout steps from 18 to 6 and improved conversion by
-            ~80%.
-          </p>
-        </div>
-
-        <div class="card project">
-          <div class="meta">AI · Platform Strategy</div>
-          <h3>AI-Driven Learning Effectiveness</h3>
-          <p>
-            Leading initiatives applying AI to learning insights,
-            personalization, and outcome measurement while adhering to
-            responsible AI principles.
-          </p>
-          <p>
-            Focused on durable platform capabilities rather than one-off
-            features.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERTISE -->
-    <section>
-      <h2>Expertise</h2>
-      <div class="card">
-        <div class="tags">
-          <span class="tag">AI / ML Platforms</span>
-          <span class="tag">AWS Cloud Architecture</span>
-          <span class="tag">Privacy & Governance</span>
-          <span class="tag">Distributed Systems</span>
-          <span class="tag">Platform Engineering</span>
-          <span class="tag">Payments & Billing</span>
-          <span class="tag">Org Design & Leadership</span>
-          <span class="tag">Product Engineering</span>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © Praveen Thati · GitHub Pages
-    </footer>
-
+  <div class="card">
+    <h3>Current Focus</h3>
+    <p>
+      Leading large-scale learning and platform initiatives at AWS,
+      spanning enterprise SaaS, global commerce, privacy governance,
+      and AI-powered developer productivity.
+    </p>
   </div>
+
+</div>
+
+<footer>
+  © Praveen Thati
+</footer>
+
 </body>
 </html>
