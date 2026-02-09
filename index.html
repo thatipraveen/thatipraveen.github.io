@@ -1,11 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Praveen Thati</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Praveen Thati | Engineering Leader</title>
+
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #020617;
+      --border: #1e293b;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #60a5fa;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-top: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: #020617;
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: var(--muted);
+      margin: 6px 6px 0 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .cta {
+      margin-top: 24px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-right: 16px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #020617;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 80px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Praveen Thati</h1>
-  <p>Engineering Leader | AI | Cloud Platforms</p>
+  <div class="container">
+
+    <!-- HERO -->
+    <h1>Praveen Thati</h1>
+    <h2>Engineering Leader · AI · Cloud Platforms · Privacy</h2>
+
+    <p>
+      Engineering leader with <strong>18+ years</strong> of experience building
+      large-scale cloud platforms, AI-driven systems, and privacy-first
+      architectures. Proven track record of leading multi-disciplinary teams
+      and delivering customer-critical platforms at global scale.
+    </p>
+
+    <div class="cta">
+      <a href="#" title="Resume (add PDF later)">Download Resume</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/thatipraveen" target="_blank">GitHub</a>
+    </div>
+
+    <!-- IMPACT -->
+    <div class="card">
+      <h3>Leadership Impact</h3>
+      <div class="grid">
+        <div>
+          <strong>AI & Learning Platforms</strong>
+          <p>
+            Led the delivery of the <strong>AWS Skill Builder Admin Experience</strong>,
+            enabling enterprise training administration for
+            <strong>millions of learners worldwide</strong>.
+          </p>
+        </div>
+        <div>
+          <strong>Privacy @ Massive Scale</strong>
+          <p>
+            Enabled a new privacy governance service across
+            <strong>700M+ Amazon devices</strong>,
+            improving auditability, compliance, and customer trust.
+          </p>
+        </div>
+        <div>
+          <strong>Global Commerce & Payments</strong>
+          <p>
+            Delivered a redesigned purchase experience across
+            <strong>20+ countries</strong>, reducing checkout steps
+            from 18 → 6 and improving drop-offs by <strong>~80%</strong>.
+          </p>
+        </div>
+        <div>
+          <strong>Org & People Leadership</strong>
+          <p>
+            Led organizations of <strong>30–35+ engineers, EMs, PMs, and TPMs</strong>,
+            driving execution during ambiguity, growth, and re-orgs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERTISE -->
+    <div class="card">
+      <h3>Areas of Expertise</h3>
+      <div>
+        <span class="pill">AI / ML Platforms</span>
+        <span class="pill">Cloud Architecture (AWS)</span>
+        <span class="pill">Privacy & Governance</span>
+        <span class="pill">Large-Scale Distributed Systems</span>
+        <span class="pill">Platform Engineering</span>
+        <span class="pill">Payments & Billing</span>
+        <span class="pill">Org Design & Execution</span>
+        <span class="pill">Product-Engineering Partnerships</span>
+      </div>
+    </div>
+
+    <!-- CURRENT -->
+    <div class="card">
+      <h3>Current Focus</h3>
+      <p>
+        Leading AI-driven learning and platform initiatives at AWS,
+        focused on effectiveness, enterprise readiness, and responsible AI.
+        Interested in roles at the intersection of
+        <strong>AI, platforms, and business impact</strong>.
+      </p>
+    </div>
+
+    <footer>
+      © Praveen Thati · Built with GitHub Pages
+    </footer>
+
+  </div>
 </body>
 </html>
