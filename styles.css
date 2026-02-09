@@ -2,12 +2,13 @@
    DESIGN TOKENS
 ========================= */
 :root {
-  --bg: #0a0f1f;
+  --bg: #0b1224;
   --panel: #020617;
   --border: #1e293b;
   --text: #e5e7eb;
-  --muted: #9ca3af;
+  --muted: #94a3b8;
   --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.12);
 }
 
 /* =========================
@@ -17,19 +18,32 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, sans-serif;
-  background: var(--bg);
+  background: radial-gradient(
+      1200px 600px at 20% -10%,
+      rgba(56, 189, 248, 0.08),
+      transparent
+    ),
+    var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 strong {
@@ -42,7 +56,7 @@ strong {
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 72px 28px;
+  padding: 80px 28px;
 }
 
 /* =========================
@@ -58,7 +72,7 @@ nav {
 .nav-left {
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 .nav-right a {
@@ -77,22 +91,23 @@ nav {
 h1 {
   font-size: 52px;
   line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin: 0 0 24px;
+  letter-spacing: -0.025em;
+  margin: 0 0 28px;
 }
 
 h2 {
   font-size: 30px;
   margin: 0 0 28px;
+  letter-spacing: -0.01em;
 }
 
 h3 {
   font-size: 20px;
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 }
 
 p {
-  margin: 0 0 16px;
+  margin: 0 0 18px;
   color: var(--muted);
   font-size: 16px;
 }
@@ -102,35 +117,53 @@ p {
 ========================= */
 .hero {
   max-width: 780px;
-  margin-bottom: 96px;
+  margin-bottom: 104px;
 }
 
 .hero p {
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 /* =========================
    SECTIONS
 ========================= */
 .section {
-  margin-bottom: 96px;
+  margin-bottom: 104px;
+}
+
+/* subtle divider between big sections */
+.section::after {
+  content: "";
+  display: block;
+  margin-top: 88px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border),
+    transparent
+  );
 }
 
 /* =========================
    CARDS
 ========================= */
 .card {
-  background: var(--panel);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 6, 23, 0.9),
+    rgba(2, 6, 23, 0.75)
+  );
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 32px;
   margin-bottom: 32px;
 }
 
 .list-card p {
   margin: 0;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 /* =========================
@@ -143,10 +176,28 @@ p {
 }
 
 /* =========================
+   FLAGSHIP PROJECT EMPHASIS
+========================= */
+.section h2:first-child {
+  position: relative;
+}
+
+.section h2:first-child::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 6px;
+  width: 6px;
+  height: 24px;
+  border-radius: 4px;
+  background: var(--accent);
+}
+
+/* =========================
    CTA / BUTTONS
 ========================= */
 .cta {
-  margin-top: 36px;
+  margin-top: 40px;
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
@@ -154,8 +205,8 @@ p {
 
 .cta a {
   display: inline-block;
-  padding: 14px 22px;
-  border-radius: 12px;
+  padding: 14px 24px;
+  border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--panel);
   color: var(--text);
@@ -173,7 +224,7 @@ p {
    FOOTER
 ========================= */
 footer {
-  margin-top: 120px;
+  margin-top: 140px;
   text-align: center;
   font-size: 14px;
   color: var(--muted);
